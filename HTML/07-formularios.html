@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="" method="GET"> <!--En esta parte se crea un formulario que tiene un metodo para recibir la informacion
+        Form etiqueta del formulario que recibe atributos como action que recibe una url que se encarga de procesar los datos del formulario y luego que metodo vamos a mandar la informacion GET o POST-->
+        <label for="nom">Ingrese un nombre</label>
+        <br>
+        <!--<input type="text" value="Escribe tu nombre" >-->
+        <input type="text" placeholder="Escribe tu nombre " maxlength="8" minlength="1" name="nombre" id="nom" size="10">
+        <!--(input type) indica el tipo de dato que vamos a ingresar-->
+        <!--(placeholder) hace que la letra que esta dentro del cuadro se vea gris palido, tambien hace que el texto "Escribe tu nombre" se borre al momento de que demos un click en el label o en el cuadro-->
+        <!--(maxlength) indica el tamaño de caracteres que se puede ingresar-->
+        <!--(minlength) indica el minimo de caracteres que se deben ingresar-->
+        <!--(name) nos sirve para asignarel un nombre a este input que acabamos de crear-->
+        <!--(id) nos sirve para llamar al label que por medio del ID, asociamos este input type con el laber que se llama "nom"-->
+        <!--(size) con esto podemos cambiar el tamaño de la caja donde ingresamos al informaicon-->
+        <br><br>
+
+        <label for="password">Ingrese su password</label>
+        <br>
+        <input type="password" name="pass" minlength="6" id="password">
+        <br><br>
+
+        <label for="email">Ingrese su email</label>
+        <br>
+        <input type="email" name="email" placeholder="Example@mail.com" id="email">
+        <br><br>
+
+        <label for="edad">Ingrese su edad</label>
+        <br>
+        <input type="number" name="edad" id="edad" max="30" min="1">
+        <br><br>
+
+        <label for="genero">Elija su genero</label>
+        <br>
+        <input type="checkbox" name="sexo" value="masculino" id="">Masculino 
+        <input type="checkbox" name="sexo" value="femenino" id="">Femenino 
+        <br><br>
+
+        <input type="radio" name="sexo" value="masculino" id="">Masculino
+        <input type="radio" name="sexo" value="femenino" id="">Femenino
+        <br><br>
+        <input type="button" value="enviar"><!--Este es un simple boton, pero no hace nada-->
+        <input type="submit" value="submit"><!--Este es un boton que se encarga de enviar la informacion que nosotros introducimos-->
+        <br><br>
+        <Select name="pais" id="">
+            <option value="Guatemala">Guatemala</option>
+            <option value="Colombia">Colombia</option>
+        </Select>
+        <input type="color" name="color" id="">
+        <input type="range" name="rango" id="">        
+
+    </form>
+       
+</body>
+</html>

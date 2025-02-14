@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Diseño, desarrollo, pagina web"><!--este ya ni se usa, las palabras diseño etc... Son de que seria mi pagina web para que google busque-->
+    <title>Fc Barcelona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--Proporciona al navegador instrucciones sobre como controlar las dimensiones de la pagina. 
+    Añadir el codigo width=device-width asegura que la pagina se cambie de tamaño para que coincida con el ancho de la pantalla-->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css"><!--para agregar una hoja de estilos 
+    type="text/css" Para indicar que tipo de contenido voy a mostrar
+    href="css/estilos.css Especifico la ruta en donde esta-->
+    <link rel="shortcut icon" href="logo/logo-Barsa.png">
+</head>
+<body>
+    
+    <!--PARTE ENCABEZADO-->
+    <header><!--codigo semantico. HEADER como un encabezado es para que nos busque mas rapido el navegador-->
+        <div><!--DIV es un separador de contenido... Es para las imagenes o videos-->
+            <img src="img/escudoBarsa1.png" width="20%" height="20%" alt="Logo del Barcelona">
+        </div>
+        <nav><!--le digo al navegador que hay un menu-->
+            <ul><!--usamos UL para indicar que es un menu-->
+                <li><a href="#">Inicio</a></li><!--con LI creamos una lista-->
+                <li><a href="#">Categoria 1</a></li>
+                <li><a href="#">Categoria 2</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!--CONTENIDO SECUNDARIO-->
+    <!--Se pone SECTION para decirle al navegador que esta es la parte secundaria-->
+    <section class="wrapper"><!--WRAPPER es un contenedor y le decimos cuantas SECTION mas queremos-->
+        <section class="main">
+            <article><!--para que google busque.. Es el que mas importancia le va a dar-->
+                <h2>TITULO DEL PRIMER PARRAFO</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia fugit nostrum vitae modi, quae eaque totam cum blanditiis assumenda delectus debitis ducimus, excepturi rerum error dolore quisquam numquam minima magni?
+                </p>
+            </article>
+
+            <article>
+                <h2>SEGUNDO TITULO DEL PARRAFO</h2>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem voluptatibus exercitationem iste a accusamus aliquam nesciunt quo labore quisquam? Ab culpa, placeat quos incidunt perferendis quod dignissimos nostrum dicta vel!
+                    <br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus voluptatum in laboriosam, cupiditate, doloribus accusantium voluptas quisquam illum dolorum placeat nostrum, eos animi dignissimos consectetur enim delectus iure labore consequuntur.
+                </P>
+            </article>
+
+        </section>
+
+        <aside><!--Representa la seccion de una pagina que consiste en contenido que esta indirectamente relacionado con el contenido principal del documento.
+        Contenido no importante para el buscador pero puede que si para el usuario-->
+            <h3>Sidebar</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique libero dolorum doloribus ipsam odit vel minus! Nisi, reprehenderit quas debitis earum placeat delectus ex sunt est natus accusantium aspernatur nobis!
+                    <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit, quo veniam adipisci error aperiam ea tenetur molestias esse animi. Sunt sapiente cum odit aut enim at quo consectetur ducimus?
+                </p>
+
+                <p>
+                    <i>Lorem ipsum dolor sit,</i><!--Tipo de letra Italika--> 
+                    <b>amet consectetur adipisicing elit.</b><!--Letras en NEGRITA--> 
+                    <br><!--Indica un salto de linea-->
+                    Dolores laudantium dignissimos voluptate aliquid dolore accusamus eos non, iusto delectus perspiciatis inventore reprehenderit doloremque voluptates obcaecati <span>explicabo</span><!--Le da mas enfasis al navegador--> provident repudiandae veritatis hic!
+                    
+                </p>
+        
+        </aside>
+    </section>
+
+    <footer><!--Indicamos que la pagina tiene un pie de pagina-->
+        <p>Javier de Leon - Carrera desarrollador web 2025</p>
+    </footer>
+</body>
+</html>
