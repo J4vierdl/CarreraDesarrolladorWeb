@@ -1,0 +1,47 @@
+/* ########## SELECTORES ######## */
+
+/* SELECTOR UNIVERSAL */
+
+*{
+    font-family: Verdana, Arial, Tahoma, sans-serif; /* Define una lista de fuentes o familias de fuentes 
+    con un orden de prioridad, para utilizar en un elemento seleccionado.
+    a diferencia de la maroria de las propiedades CSS, los valores se separan con comas, para indicar que son valores alternativos.
+    */
+
+}
+
+header h1{
+    background: blue;
+    color: white;
+    padding: 10px;
+}
+
+section h1{
+    background: red;
+    color: beige;
+    padding: 10px; /* para establecer valores para el grosor del area de relleno, para que se separe de los bordes*/
+    
+}
+
+a{
+    font-size: 18px; /* Cambia el tamaño de letra */
+    color: green;
+    text-decoration: none; /*Elimina el subrayado de las letras*/
+
+}
+
+footer a{
+    color: red;
+}
+
+#description, /*De esta forma es como estamos tomando los ID's*/
+#titulo
+{
+    border: 5px solid purple;
+    padding: 10px;
+}
+
+#titulo {
+    background: orange;
+    border: 2px dashed greenyellow;
+}
