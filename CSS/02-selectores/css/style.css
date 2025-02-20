@@ -45,3 +45,71 @@ footer a{
     background: orange;
     border: 2px dashed greenyellow;
 }
+
+/* SELECTOR DE CLASES */
+
+.parrafo2{
+    font-style: italic; /* La propiedad FONT-STYLE permite definir el aspecto de una familia tipografica entre los valores: normal, italic (cursiva), y oblique*/
+    /* text-decoration: underline;*/
+    font-weight: bold; /*Especifiac el grozor de la letra (Negrita), algunos tipos de letras solo estan disponibles en NORMAL o BOLD*/
+
+}
+
+.parrafo1, .parrafo3{
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+
+.parrafo3{
+    background-color: yellow;
+    color: black;
+}
+
+/* SELECTOR DE ATRIBUTO */
+
+#usuario form{
+    border: 5px solid blue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+#usuario form *{
+    display: block; /* Cada elemento va a estar en una sola linea para el solo */
+}
+
+/* Con esto ^ le digo... los que al principio tengan www */
+
+a[href^="www"]{
+    color: rgb(137, 213, 79);
+}
+
+/* Con esto $ le digo... los que al final tengan es*/
+
+a[href$="es"]{
+    color: rgb(212, 128, 86);
+}
+
+/* Con esto * le digo... cualquier elemento que tengo javier */
+
+a[href*=javier]{
+    color: rgb(0, 139, 30);
+}
+
+
+input[type= "text"]{
+    margin-bottom: 15px; /* Le da el espacio entre cada elemento */
+    padding: 10px;
+    width: 300px;
+}
+
+input[type="submit"]{
+    background: green;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;/* Convierte el texto en mayusculas */
+    border: 3px solid brown; /*agrega un borde o marco de color negro solido*/
+    cursor: pointer; /* cuando pasa el cursor por encima del boton, se combierte en una manita*/
+
+}
