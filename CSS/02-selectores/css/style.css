@@ -113,3 +113,24 @@ input[type="submit"]{
     cursor: pointer; /* cuando pasa el cursor por encima del boton, se combierte en una manita*/
 
 }
+
+/* ------- SELECTOR HIJO -------*/
+#menu>li>a{
+    font-size: 18px;
+    color: brown;
+}
+
+/*Prioridad*/
+/* CSS le da prioridad ultimo, pero si por ejemplo se pone un ID; CSS le da prioridad al ID, toma en cuenta a lo mas especifico  */
+/* Pero si le pongo !importan vale sobre todo */
+
+#saludo h1{
+    background: brown;
+}
+
+h1{
+    background: black !important; /* No cambia el H1 porque le dio prioridad al que tiene ID, a menos que le agrege !important, entonces ahi si le da prioridad*/
+
+}
+
+
