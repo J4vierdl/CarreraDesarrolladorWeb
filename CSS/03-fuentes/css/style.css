@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Caveat;
+    src: url(../font/Caveat-VariableFont_wght/Caveat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: GrechenFuemen;
+    src: url(../font/GrechenFuemen-Regular/GrechenFuemen-Regular.ttf);
+}
+
+@font-face {
+    font-family: PlaywriteITModerna;
+    src: url(../font/PlaywriteITModerna-VariableFont_wght/PlaywriteITModerna-VariableFont_wght.ttf);
+}
+
+h1{
+    font-family: GrechenFuemen;
+    color: #ffc800;
+}
+
+h3{
+    font-family: Caveat;
+    font-size: 40px;
+    font-weight: lighter;/*Cambia el grosor de la letra */
+    color: rgba(62, 147, 164, 0.322);
+}
+
+p{
+    font-family: PlaywriteITModerna;
+    color: rgb(133, 25, 25);
+    
+}
