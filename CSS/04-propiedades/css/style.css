@@ -108,6 +108,12 @@
     margin: 50px 24px 30px 25px;
     */
 
-    margin: 40px 80px; /*Tambien se puede usar de esta manera, tomando en cuenta que la primera cantidad que es 40px; es para Arriba y abajo y los 80px son para Izquierda y Derecha*/
+    /* margin: 40px 80px; Tambien se puede usar de esta manera, tomando en cuenta que la primera cantidad que es 40px; es para Arriba y abajo y los 80px son para Izquierda y Derecha*/
+
+    /* margin: 40px 0 80px 40px; Tambien se puede de esta manera */
+
+    /* margin: 40px 50px 80px;  En esta parte, el  valor de la izquierda tomara el mismo valor de la derecha */
+
+    margin-bottom: 0 auto; /* lo que hace es basicamente centrar el cuadro, pero antes se le tiene que dar un ancho para que la palabra auto pueda aplicarse.*/
 
 }
