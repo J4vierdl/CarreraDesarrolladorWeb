@@ -1,3 +1,8 @@
+*{
+    width: 300px;
+    height: 150px;
+}
+
 /* PARA BACKGROUND */
 .container{
     width: 70%;
@@ -85,10 +90,7 @@
 
 /*BOX MODEL padding*/
 
-.box{
-    width: 300px;
-    height: 150px;
-}
+
 
 .box1{
     background: rgba(0, 255, 191, 0.744);
@@ -115,5 +117,68 @@
     /* margin: 40px 50px 80px;  En esta parte, el  valor de la izquierda tomara el mismo valor de la derecha */
 
     margin-bottom: 0 auto; /* lo que hace es basicamente centrar el cuadro, pero antes se le tiene que dar un ancho para que la palabra auto pueda aplicarse.*/
+
+}
+
+/* CUANDO TOCAN LOS MARGENES SOLO SE TOMA EL VALOR DEL MAYOR MARGEN.
+Por ejemplo: si una caja que esta primero tiene un marin-botton: 50px
+y la segunda caja que se encuentra abajo de esta tiene un margin-top: 30px entonces 
+ahi chocarian los margenes y se toma el que tiene mas valor*/
+
+/*Un elemento hijo  puede hecer colapso de margen con su padre y para separarlo del padre
+se podria colocando un PADDING*/
+
+/*El padding en una caja, esos pixeles se agregarian a la dimension de la caja 
+si no quiero ese comportamiento y quiero que la caja tenga un mismo tamaño
+se coloca esta propiedad BOX-SIZING: Border-box*/
+
+.box2{
+    
+    padding: 20px;
+    /* padding: top right bottom left*/
+    background: rgb(179, 0, 255);
+    margin-top: 30px;
+    margin-left: 20px;
+    overflow: hidden; /*Todo lo que se desborda o se pasa del cuadro, lo oculta*/
+    border: 2px solid greenyellow;
+    box-sizing: border-box; /* Esto sirve para que el tamaño del cuadro sea igual que el anterior, o que no cambie de tamaño debia al padding, entonces para evitar eso, se usa este codigo BOX-SIZING: border-box*/
+
+    box-sizing: content-box; /*Esto sirve para que el cuadro regrese como antes, osea que sea mas grande por las modificaciones que tiene*/
+}
+
+.box {
+    background: orangered;
+    width: 200px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+
+    /*---- BORDER ----*/
+    /* border: widht style color */
+    /* border: 10px dashed brown */
+
+    /* border-width: top right bottom left */
+    /* border-style: top right bottom left */
+    /* border-color: top right bottom left */
+
+    /*
+    border-top: 10px solid green;
+    border-right: 5px dashed yellow;
+    border-bottom: 8px double black;
+    border-left: 8px dotted white;
+    */
+
+    /* https://developer.mozilla.org/es/docs/Web/CSS/border-style */
+
+    border-top-width: 20px;
+    border-top-style: double;
+    border-top-color: turquoise;
+
+    border-right-width: 15px;
+    border-right-style: dashed;
+    border-right-color: beige;
+    
+    
 
 }
