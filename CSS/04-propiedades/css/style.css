@@ -80,11 +80,7 @@
 }
 
 
-.img{
-    width: 75%;
-    height: 75%;
-    background-size: cover;
-}
+
 
 /* ------MARING------- */
 
@@ -147,11 +143,10 @@ se coloca esta propiedad BOX-SIZING: Border-box*/
 }
 
 .box {
-    background: orangered;
+    background: cadetblue;
     width: 200px;
     height: 200px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
     margin-top: 40px;
 
     /*---- BORDER ----*/
@@ -179,6 +174,22 @@ se coloca esta propiedad BOX-SIZING: Border-box*/
     border-right-style: dashed;
     border-right-color: beige;
     
-    
+    border-bottom-width: 25px;
+    border-bottom-style: solid;
+    border-bottom-color: deeppink;
 
+    border-left-width: 25px;
+    border-left-style: ridge;
+    border-left-color: gold;
+
+}
+
+.img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Adapta la imagen para que se vea bien */
+    margin: 20px auto;
+
+    
 }
