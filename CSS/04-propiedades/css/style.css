@@ -1,7 +1,4 @@
-*{
-    width: 300px;
-    height: 150px;
-}
+
 
 /* PARA BACKGROUND */
 .container{
@@ -190,6 +187,9 @@ se coloca esta propiedad BOX-SIZING: Border-box*/
     height: 200px;
     object-fit: cover; /* Adapta la imagen para que se vea bien */
     margin: 20px auto;
-
-    
+    /*border-radius: 50%; /* Redondea la imagen, siempre y cuando tengan las mismas dimensiones */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 100%;
 }
