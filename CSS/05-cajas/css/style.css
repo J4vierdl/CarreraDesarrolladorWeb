@@ -1,0 +1,34 @@
+*{
+    /* Asterisco es para toda la pagina */
+    margin: 0px; /* Margin para que no haya espacios */
+    padding: 0px; /* Para que se separe de los bordes */
+    
+
+}
+
+body{
+    padding: 40px; /* Para que se separe de los bordes de todo el body */
+    
+}
+
+#cajas{
+    max-width: 1035px; /* Ancho maximo de pantalla */
+    border: 1px solid black; /* Borde tamaño tipo color */
+
+}
+
+.caja{
+    /* Se comporta como una caja, SI TUVIERA ENLACES DEBEIRA PONER display: inline-block; */
+    display: block; /* display: none; desaparece el elemento o lo saca del flujo de flotado  */
+    width: 250px; /* Anchura */
+    height: 250px; /* Altura */
+    background-color: lightblue;
+    border: 10px solid red; /* Borde = Tamaño tipo y color */
+    margin: 15px auto 15px 25px; /* Le da los margenes por fuera */
+    padding: 20px; /* le da un margen por dentro de 20px */
+    padding-bottom: 34px; /* le da un espacio a la parte de abajdo de las cajas */
+
+    float: left; /* Se mueven todas las cajas hacia la izquierda hasta que se ocupe el tamaño del margen general y cuando el programa ve que ya no caba otra caja; la manda para abajo*/
+    
+
+}
