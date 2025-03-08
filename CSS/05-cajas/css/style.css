@@ -29,6 +29,21 @@ body{
     padding-bottom: 34px; /* le da un espacio a la parte de abajdo de las cajas */
 
     float: left; /* Se mueven todas las cajas hacia la izquierda hasta que se ocupe el tamaño del margen general y cuando el programa ve que ya no caba otra caja; la manda para abajo*/
-    
+    /*float: none; Lo que hace es dejar las tabla tal y como estaban antes, osea que el float: left ya no tiene efecto */
 
+
+}
+
+.caja p{
+    font-weight: bold; /* El grosor de la letra */
+    text-align: center; /* Centra el texto */
+    font-size: 20px; /* Tamaño de letra */
+    font-family: Arial, Helvetica, sans-serif; /* Tipo de letra, en este caso es Arial porque es el primero */
+    line-height: 250px; /* Coloca el texto a la mitad del cuadro */   
+
+}
+
+.clearfix{
+    float: none; /* vuelva todo por defecto */
+    clear: both; /* limpia los flotados */
 }
