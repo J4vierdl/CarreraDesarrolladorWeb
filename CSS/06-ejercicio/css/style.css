@@ -21,7 +21,8 @@
 }
 
 #menu{
-    background: rgb(234, 67, 67);
+    background: rgb(230, 230, 230);
+    height: 50px;
 }
 
 #menu ul li{
@@ -36,7 +37,7 @@
 #menu ul li a{
     display: block; /* usarlo siempre que se usan los flotados "float" */
     padding: 15px;
-    color: aqua;
+    color: rgb(9, 70, 11);
 }
 
 #menu ul li:hover{
@@ -51,5 +52,32 @@
 .clearfix{
     float: none;
     clear: both;
+}
+
+#contenido{
+    width: 69%;
+    float: left;
+}
+
+#lateral{
+    float: left;
+    width: 30%;
+    border: 1px solid red;
+    min-height: 500px; /* Quiere decir que va a tener un minimo de altura de 500px */
+    max-height: 650px; /* Quiere decier que va a terner un maximo de algura de 650px */
+    text-align: center;
+    overflow: hidden; /* Oculta el texto sobrande del cuadro */
+    overflow: visible; /* Muestra el codigo que se pasa del cuadro */
+    overflow: scroll; /* habilita un scroll para que podamos desplazar el texto */
+    text-align: justify;
+    text-indent: 20px; /* Coloca una sangria de 20px al inicio del texto */
+    word-spacing: 10px; /* le agrega una espacio de 10px entre cada palabra */
+    letter-spacing: 5px; /* Agrega un espacio de 5px pero entre letra y letra */
+    text-transform: uppercase; /* pasa las letras de minusculas a mayusculas */
+    text-decoration: line-through; /* tacha todo el texto */
+    text-decoration: underline; /* Subraya todo el texto */
+    
+
+
 }
 
