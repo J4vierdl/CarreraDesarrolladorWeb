@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#general{
+    width: 1200px;
+    margin: 0px auto; /* Con esto centramos todo el contenido */
+    border: 1px solid black;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    background: rgb(115, 115, 251);
+    text-align: center; /* Centra el texto dentro del margen */
+    line-height: 90px; /* Centra el texto de forma horizontal */
+
+}
+
+#menu{
+    background: rgb(234, 67, 67);
+}
+
+#menu ul li{
+    /*display: inline-block; /* Coloca los elementos UNO despues del OTRO */
+    display: block;
+    float: left;
+    border-right: 1px solid #ccc;
+
+   
+}
+
+#menu ul li a{
+    display: block; /* usarlo siempre que se usan los flotados "float" */
+    padding: 15px;
+    color: aqua;
+}
+
+#menu ul li:hover{
+    background: rgb(58, 58, 255);
+    cursor: pointer;
+}
+
+#menu ul li:hover a{
+    color: white;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
