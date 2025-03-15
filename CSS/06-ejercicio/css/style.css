@@ -45,7 +45,7 @@
     cursor: pointer;
 }
 
-#menu ul li:hover a{
+#menu ul li:hover a{ /* Las letras de los enlaces se pusieron de color blanco, cada vez que pasa el cursor */
     color: white;
 }
 
@@ -69,15 +69,77 @@
     overflow: hidden; /* Oculta el texto sobrande del cuadro */
     overflow: visible; /* Muestra el codigo que se pasa del cuadro */
     overflow: scroll; /* habilita un scroll para que podamos desplazar el texto */
-    text-align: justify;
-    text-indent: 20px; /* Coloca una sangria de 20px al inicio del texto */
-    word-spacing: 10px; /* le agrega una espacio de 10px entre cada palabra */
-    letter-spacing: 5px; /* Agrega un espacio de 5px pero entre letra y letra */
-    text-transform: uppercase; /* pasa las letras de minusculas a mayusculas */
-    text-decoration: line-through; /* tacha todo el texto */
-    text-decoration: underline; /* Subraya todo el texto */
     
+    /*text-align: justify;*/
+    /*text-indent: 20px; /* Coloca una sangria de 20px al inicio del texto */
+    /*word-spacing: 10px; /* le agrega una espacio de 10px entre cada palabra */
+    /*letter-spacing: 5px; /* Agrega un espacio de 5px pero entre letra y letra */
+    /*text-transform: uppercase; /* pasa las letras de minusculas a mayusculas */
+    /*text-decoration: line-through; /* tacha todo el texto */
+    /*text-decoration: underline; /* Subraya todo el texto */
+    
+
+}
+
+#contenido h1{
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    padding: 15px;
+    color: rgb(85, 85, 85);
+    text-shadow: 1px 5px 2px gray; /* Le doy una sombra en el eje x(plana), el primer valor si es positivo la sombra se inclina hacia la derecha, si es negativo hacia la izquierda.
+    El segundo valor si es positivo se inclina hacia abajo, si es negativo se inclina hacia arriba.
+    El tercer valor es para el difuminado que en este caso sera gris, el color de la sombra */
 
 
 }
 
+#contenido .caja{
+    width: 40%;
+    height: 250px;
+    background-color: #ccc; /* El color al cuadro */
+    border: 1px solid rgb(0, 255, 34);
+    color: white; /* Color de las letras */
+    float: left;
+    margin: 20px;
+    text-align: center;
+    line-height: 200px; /* Para que el texto se centre verticalmente */
+    color: #444;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 30px;
+    border-radius: 30px 20px 5px 10px;
+    border-radius: 999px;
+
+}
+
+.sombra-interior{
+    box-shadow: 5px 5px 10px gray inset !important; /* inset hace que sea un sombreado interior */
+}
+
+footer{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    background: #ccc;
+    text-align: center;
+    color: #444;
+    border-top: 1px solid #ccc;
+}
+
+.libre{
+    /*POSICION static es el q esta por defecto es estatico no se desplaza el elemento.
+  POSICION relative posiciona el elemento sigifica q ya podes usar: top, left, right, bottom
+  y se mueve desde su posicion original.
+  POSICION ABSOLUTA=elimina la posicion original (por defecto se pone encima del elemento anterior)
+   y la posicion pasa a ser el navegador pero si hubiera un ancestro como un padre con la propiedad
+  position su posicion se basa en ese padre entonces.. se convierte en una CAJA LIBRE, 
+  ESTA POR FUERA DE TODO ENTONCES POSICION ABSOLUTA ES PARA PODER MOVER LA CAJA POR DONDE QUIERA
+   DE LA PAGINA
+   z-index seria para superponer un elemento arriba del otro segun el valor numerico mas alto.
+   fixed la posicion pasa a ser el navegador y no tiene en cuenta los ancestros 
+   y se qeda fijo en su posicion
+   */
+
+   position: absolute;
+   top: 300px;
+}
