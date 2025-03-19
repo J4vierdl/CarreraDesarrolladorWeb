@@ -48,3 +48,32 @@ ul li:last-child{
 :root{
     --blue: blue; /* de esta forma es como podemos crear variable en CSS */
 }
+
+h1{
+    color: var(--blue);
+}
+
+/* PSEUDOELEMENTOS se señala con :: por ejemplo p::selection seria que la etiqueta p si la pintamos con el mouse hacia tal cosa. tambienesta el ::first-line seria la primer linea del parrafo
+::first-letter la primer letra del parrafor
+tambien tenemos el ::placeholder para un input ejemplo input[type="text"]::placeholder
+::before significa poner tal cosa como antes del contenido del elemento en cuestion
+::after seria despues y la forma de ingresar el contenido es con content si o si content hay que agregarlo, autuq no se ponga nada de texto, despues se puede agregar un elemento si es necesario */
+
+/* En este caso, cuando seleccionamos el texto con el mouse, la seleccion ya no va a ser azul, sino ahora azul violeta */
+/*p::selection{ 
+    background-color: blueviolet;
+}*/
+
+/*En este caso, me marca toda la primera linea del parrafo y lo marca de color aquamarine. */
+/*p::first-line{
+    background-color: aquamarine;
+}*/
+
+/* En este caso, solo me marca la primera letra del parrafo */
+/* p::first-letter{
+    background-color: rgb(0, 255, 21);
+}*/
+
+input[type="text"]::placeholder{
+    color: brown;
+}
