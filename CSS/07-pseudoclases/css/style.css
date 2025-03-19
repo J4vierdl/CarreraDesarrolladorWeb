@@ -1,0 +1,50 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li{
+    font-size: 20px;
+}
+
+/* La PSEUDOCLASE me va a poner todo esto en primera lista  */
+ul li:first-child{ /* First-child: Toma unicamente el primero de la lista */
+    color: blueviolet;
+    font-weight: bold; /* Me coloca el texto en NEGRITA */
+}
+
+/* nth-child: Esta pseudoclase me permite elegir un elemento de la lista, estableciendo el numero entre parentesis */
+ul li:nth-child(2){
+    color: brown;
+    font-weight: bold;
+}
+
+/* LAST-CHILD: me va a seleccionar unicamente al ultimo elemento de la lista */
+ul li:last-child{
+    color: green;
+    font-size: bold;
+}
+
+/* Si yo nunca he entrado a este enlace, me lo va poner en color rojo */
+#mi-enlace:link{
+    color: red;
+    font-size: 30px;
+}
+
+/* Si yo ya visite este enlace, me lo pondra de color verde oscuro */
+#mi-enlace:visited{
+    color: darkgreen; 
+}
+
+.nav_links{
+    background-color: red;
+}
+
+/* Target: captura la accion del enlace de donde hacemos clic */
+.nav_links:target{
+    background-color: blue;
+}
+
+/* :root Esto indica la raiz del documento, es lo mismo que escribir html{}, pero este es mas especifico */
+:root{
+    --blue: blue; /* de esta forma es como podemos crear variable en CSS */
+}
