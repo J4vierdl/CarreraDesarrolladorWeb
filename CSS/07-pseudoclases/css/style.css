@@ -77,3 +77,27 @@ tambien tenemos el ::placeholder para un input ejemplo input[type="text"]::place
 input[type="text"]::placeholder{
     color: brown;
 }
+
+p::before{
+    content: 'Prueba de pseudoelemento Before';
+    color: orangered;
+}
+
+/* En esta parte se coloca el icono de menu antes del parrafo
+p::before{ 
+    content: '';
+    background-image: url(../images/icon-hamburger.svg);
+    position: absolute;
+    top: 260px;
+    width: 20px;
+    height: 20px;
+}
+*/
+p::after{ /* En esta parte se coloca el icono de menu despues del parrafo */
+    content: '';
+    background-image: url(../images/icon-hamburger.svg);
+    position: absolute;
+    /*top: 260px;*/
+    width: 20px;
+    height: 20px;
+}
