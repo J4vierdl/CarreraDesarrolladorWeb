@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#boton{
+    display: block;
+    width: 200px;
+    padding: 15px;
+    border: 1px solid red;
+    background: #eee;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: chocolate;
+    /*transition: 150ms;*/
+    transition: background-color, widht, color, 5s;/* ESTA ES OTRA FORMA */
+}
+
+/* PARA QUE FUNCIONE UNA TRANSICION, SE NECESITA UNA PSEUDOCLASE */
+#boton:hover{
+    background: skyblue;
+    width: 400px;
+    color: chartreuse;
+}
+
+#caja{
+    width: 200px;
+    height: 200px;
+    background-color: darkgoldenrod;
+    /* clip-path: circle(50% at center); Esto hace que se haga totalmente redondo*/
+    clip-path: circle(50% at top left);
+    margin: 20px;
+    transition-property: clip-path; /* La propiedad que voy a aplicarle a la transicion */
+    transition-duration: 2s; /* Lo que dura la transicion */
+    transition-timing-function: ease; /* Las velocidades */
+    transition-delay: 1s; /* Se demora un segundo para que la transicion se ejecute */
+    /* ease ease-in ease-in-out ease-out linear */
+
+    /* HAY QUE RECORDAD QUE PARA QUE SE EJECUTE ESTA TRANSICION SE TIENE QUE EJECUTAR UNA PSEUDOCLASE */
+
+    text-align: center;
+    line-height: 200px; 
+}
+
+
+.container:hover #caja{
+    clip-path: circle(150% at top left);
+}
+
+
+#caja2{
+    margin-top: 25px;
+    width: 250px;
+    height: 250px;
+    background-color: lightseagreen;
+    color: white;
+    border: 5px solid black;
+    font-size: 20px;
+    text-align: center; 
+    line-height: 200px; /* Me coloca el texto jutamente en el centro de la caja */
+    /* En esta parte es donde se aplicara la animacion */
+    animation-name: desplazamiento; /* Se le da un nombre a la animacion */
+    animation-duration: 10s; /* El tiempo de la animacion */
+    animation-iteration-count: infinite; /* Si queremos que la animacion sea infinita */
+    animation-timing-function: linear; /* la animacion se va a ir a la misma velocidad */
+
+}
+
+/* -------------PARA HACER UNA ANIMACION, PRIMERO SE DEFINEN LOS KEYFRAMES-------------- */
+
+/* MANERA CORTA */
+
+/* 1) Le pongo nombre: desplazamiento */
+
+/* 2) Le pongo como empieza y como termina con FROM y TO */
+
+/*
+ @keyframes desplazamiento{
+    from{
+        margin-left: 0px;
+    }
+    to{
+        margin-left: 1920px;
+    }
+ }
+*/
+
+/* ---- MANERA COMPLETA ---- */
+/*
+@keyframes desplazamiento {
+    0%{
+        margin-left: 0px;
+    }
+    50%{
+        margin-left: 1670px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+*/
+
+/* ESTO ES PARA HACER ROTAR LA CAJA */
+/*
+@keyframes desplazamiento{
+    0%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    50%{
+        margin-left: 1670px;
+        transform: rotate(370deg);
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+}
+*/
+
+/* Lo hacemos rotar y se va a convitiendo en una pelota */
+/*
+@keyframes desplazamiento{
+    0%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    50%{
+        margin-left: 1670px;
+        transform: rotate(370deg);
+        border-radius: 999px;
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0px);
+    }
+}
+*/
+
+/* LO HAGO ROTAR Y SE VA CONVIRTIENDO EN PELOTA Y CAMBIA DE COLOR Y CAMBIA EL BORDE */
+
+@keyframes desplazamiento{
+    0%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+
+    50%{
+        margin-left: 1670px;
+        transform: rotate(370deg);
+        border-radius: 999px;
+    }
+
+    75%{
+        background-color: red;
+    }
+
+    77%{
+        border: 10px dashed black;
+    }
+
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+}
