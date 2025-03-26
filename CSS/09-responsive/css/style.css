@@ -68,17 +68,16 @@ aside{
     }
 }
 
-@media(max-width: 664){
-    #container {
+@media(max-width: 664px){
+    #container{
         overflow: hidden;
     }
-}
 
     aside{
         float: none;
-        min-height: auto;
+        min-height: auto; 
         line-height: 20px;
-        width: 92%;
+        width: auto;
         padding: 19px;
     }
 
@@ -88,5 +87,7 @@ aside{
 
     #articles article{
         width: 90%;
-        background: blue;
+        background-color: blue;
+        
     }
+}
