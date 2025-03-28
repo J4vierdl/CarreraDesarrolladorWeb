@@ -1,0 +1,30 @@
+/*En el formato HSL, usamos tres valores: H 
+(hue o tono, que representa el color de 0 a 360),
+S (saturación en porcentaje), y L (luminosidad también en porcentaje).
+despues se le puede agregar un cuarto valor 
+el nivel de opacidad del color (me lo hace mas transparente o no)
+*/
+
+.container{
+    /*color: blue;
+    /* Hexadecimal de 6 caracteres */
+    /*color: #4caf4f;  /* Verde sin transparencia */
+    /* Hexadecimal de 8 caracteres */
+    /*color: #4CAF50B3; /* Verde con 70% de opacidad */
+    /*rgb usa de 0 a 255 y 255 significa "máxima intensidad" para ese color*/
+    /* color: rgb(140, 185, 45); */
+    /*color: rgba(98, 127, 163, 0.73);*/ /* opacidad va del 0 al 1, 0.5 seria 50% de transparencia */
+   /* formato HSL HWB */
+   /*color: hsl(120, 100%, 50%); /* Color sólido sin transparencia */
+   /*Incluye un canal de opacidad*/
+   /*color: hsla(133, 60%, 30%, 0.5); /* Color con 50% de transparencia */
+   color: hwb(100 13% 33%); 
+   /* color: hwb(232 26% 9% / 0.075); */
+}
+
+/*En el formato HWB, usamos tres valores (Tono, Blancura, Negrura): 
+H (hue o tono, que representa el color de 0 a 360),
+W (Blancura en porcentaje), y B (Negrura también en porcentaje).
+despues se le puede agregar un cuarto valor 
+el nivel de opacidad del color (me lo hace mas transparente o no)
+*/
