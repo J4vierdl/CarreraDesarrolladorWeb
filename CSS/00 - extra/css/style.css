@@ -28,3 +28,118 @@ W (Blancura en porcentaje), y B (Negrura también en porcentaje).
 despues se le puede agregar un cuarto valor 
 el nivel de opacidad del color (me lo hace mas transparente o no)
 */
+
+/*-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+
+/*
+Sobre FONT-WEIGHT
+Define el grozor de la fuente.
+Los valores mas comunes son:
+*NORMAL (Equivale a 400).
+*BOLD (Equivale a 700)
+*Tambien se pueden usar valores numericos que van de 100 (muy fino) hasta 900 (muy grueso) en intervalos de 100.
+
+No todas la fuentes soportan todos los grosores, por lo que algunos, como NORMAL, BOLD, y ciertos valores numericos, funcionan mejor dependiendo de la fuente.
+ 
+*/
+h1{
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+}
+
+/* ------- FILTER -------- */
+/*Los filtros en CSS permiten aplicar efectos visuales a elementos, 
+como imágenes o contenedores.*/
+
+.container{
+    background-color: purple;
+    background-color: green;
+
+    /*filter: blur(2PX); /* Le da un efecto como borroso a los elementos. */
+
+    filter: brightness(300%);/* Ajusta el brillo del elemento.
+    Un valor de 100% mantiene el brillo original; 
+    valores mayores aumentan el brillo y valores 
+    menores lo disminuyen.*/
+
+     /*contrast(%):
+    Cambia el contraste del elemento.
+    100% es el valor predeterminado; 
+    valores superiores aumentan el contraste y valores inferiores lo reducen.*/
+    /* filter: contrast(200%); */
+    /*grayscale(%):
+    Convierte el elemento en una versión en escala de grises.
+    100% lo hace completamente gris, mientras que 0% lo deja sin cambios.*/
+    /* filter: grayscale(50%); */
+    /*hue-rotate(deg):
+    Cambia el matiz de los colores en el elemento.
+    Acepta un valor en grados (deg) para rotar los colores.*/
+    /*filter: hue-rotate(90deg);*//*Círculo cromático*/
+    /* filter: hue-rotate(-90deg); */
+    /*invert(%): Invierte los colores del elemento.
+    100% invierte completamente los colores; 0% no los cambia.
+    (útil para crear efectos de "modo oscuro" en imágenes)*/
+    /*filter: invert(100%);*//*el inverso es: si tengo este color verde..rgb(76, 175, 79); resto 255 - cada numero*/
+    /*opacity(%):
+    Ajusta la opacidad del elemento.
+    100% es completamente opaco, y 0% lo hace invisible.*/
+    /* filter: opacity(50%); */
+    /*saturate(%):
+    Ajusta la saturación de los colores del elemento.
+    100% es la saturación original, valores superiores aumentan 
+    la saturación y valores menores la reducen.*/
+    /* filter: saturate(200%); */
+    /*sepia(%):
+    Da al elemento un tono sepia, como en las fotos antiguas.
+    100% aplica un tono sepia completo, mientras que 0% no lo cambia.*/
+    /* filter: sepia(100%); */
+    /*drop-shadow(offset-x offset-y blur-radius color):
+    Agrega una sombra al elemento que sigue su forma (como en PNG con transparencias).
+    Los valores indican el desplazamiento en los ejes X e Y, el radio de desenfoque
+    y el color de la sombra.*/
+    /* filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)); */
+    /*Puedes combinar varios filtros en una misma regla para obtener efectos únicos*/
+    /* filter: blur(3px) brightness(120%) contrast(90%) hue-rotate(45deg); */
+
+    /*unidades de medida*/
+
+/*em y el contexto de font-size: 1em se basa en el tamaño de la fuente del elemento 
+en el que se usa. Si el elemento tiene un font-size de 50px, 
+entonces 1em será equivalente a 50px. Si no se establece un font-size en el elemento,
+entonces 1em toma el tamaño de fuente del elemento padre. 
+Si el padre tampoco tiene un font-size, buscará en el siguiente elemento superior, 
+y así sucesivamente hasta la raíz (<html> q por defecto tiene 16px).
+Uso de em en padding y margin: Los valores de em no solo dependen de la fuente 
+para el texto, sino que también se aplican al padding, margen, y otros atributos 
+que acepten unidades de medida. Esto hace que em sea muy útil para diseño flexible
+y responsivo, pero puede volverse difícil de manejar si hay muchos niveles de herencia,
+ya que los valores se acumulan.
+
+rem como una alternativa. 1rem siempre se basa en el font-size de la raíz 
+(<html>)q por defecto tiene 16px*/
+.padre{
+    font-size: 2em;
+}
+.selected{
+    font-size: 2em;
+}
+.container{
+    margin: 1em 2em;
+    font-size: 2rem;/*si dejamos h1 Por defecto, el h1 tiene un font-size de 2em. Esto significa que tomará 2 veces el tamaño de su contenedor inmediato.
+    Dado que el tamaño de .container es 1rem, que equivale a 16px(lo saca de la raiz html), entonces el h1 se calcula como 2em de 16px, resultando en 32px.*/
+}
+
+h1 {
+    font-size: 5vw; /* El tamaño del texto es el 5% del ancho de la ventana */
+  }
+
+  .mi-div {
+    width: 50vw; /* 50% del ancho de la ventana */
+    height: 75vh; /* 75% de la altura de la ventana */
+    background-color: lightblue;
+  }
+  
+
+}
