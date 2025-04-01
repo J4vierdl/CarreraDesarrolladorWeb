@@ -1,0 +1,60 @@
+body{
+    --rojo: red;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.caja{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border: 4px solid black;
+    background: gray;
+}
+/* Para comnentar todo de forma mas rapida, PRESINOAMOS CTRL + K y luego CTRL + U  */
+#layout{
+
+    
+    /* Display:flex: con esto no cesitamos usar clearfix
+    esto quiere decier que me pone los elementos uno al lado del otro sin afectar los demas elementos fuera del layout
+    y otra cosa es que el layout ocupa todo el ancho total */
+    display: flex;
+    
+    /*display: inline-flex; /* Me sentra los elementos como si estuviera usando un MARGIN: 0px auto */
+
+/*----------------------------------FLEX-DIRECTION----------------------------------------*/
+
+    /*flex-direction: row; /* coloca los elementes en una fila, y ya no los centra */
+
+    /*flex-direction: column; /* En esta parte se estan colocando los elementos en una columna pero los cuadros ocupan todo el ancho */
+
+    /*flex-direction: row-reverse; /* Lo que hace es que los elementos se colocan del ultimo al primero y los ajusta hacia el lado contrario (derecha) */
+
+    /*flex-direction: column-reverse; /* Coloca los elementos en forma de columna paro inicia con el Ultimo hacia el primero */
+
+    /* Si los elementos son varios y se pasan del ancho de la pantalla; podemos usar lo siguiente:  */
+    /*flex-wrap: wrap; /* Lo que hace es que agrupa todos los elementos en el ancho de la pantalla y los que ya no caben, los pasa hacia abajo, como si le diera un enter */
+
+    /*flex-flow: row wrap; /* Esto hace exactamente los mismo, coloca todos los que caben y los que no; los pasa para abajo. 
+    */
+    
+/* ----------------------------------Justify-content-----------------------------*/
+
+    /*justify-content: start; /* Lo que hace es unicamente pasar los elementos hace la izquierda */
+    
+    /*justify-content: end; /* lo que hace es mover todos los elementos hasta el final (derecha) */
+    
+    /*justify-content: center; /* Lo que hace es Centrar en la pantalla todos los elementos. */
+    
+    /*justify-content: space-around; /* Lo que hace es que justifica todos los elementeos, los separa dandole el mismo espacio en el ancho de la pantalla */
+    
+    /*justify-content: space-evenly; /* Lo que hace es que justifica los elementos pero los espacios son un poco mas reducidos y centra los elementos. */
+
+    justify-content: space-between;/* lo que hace es que pega a los bordes los elemtnetos de los costados y justifica los otros elementos */
+
+
+}
+
