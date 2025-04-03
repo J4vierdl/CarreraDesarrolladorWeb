@@ -1,0 +1,59 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#layout{
+    /* Porcentaje para que se haga responsive */
+    width: 80%;
+    height: 400px;
+    margin: 0px auto;
+    display: grid; /* Se le esta aplicando GRID  todos los elementos del layout
+    Es decir que se van a colocar como una COLUMNA, con flex es en FILA */
+    grid-gap: 10px; /* lo que hace es darle un esapcio entre cada caja de 10px osea que las va a separar */
+    border: 3px solid orangered;
+    padding: 10px;
+    
+    /* con GRID-TEMPLATE-COLUMNS: Puedo definir n columnas y tenemos que indicar el tamaño de cada columna con su unidad de medida */
+    /*grid-template-columns: 50% 50% ; /* Defino dos columnas y van a ocupar el 50% de cada lado (Esta es la forma simple) */
+    /*grid-template-columns: calc(50% - 10px) calc(50% - 10px); /* En este caso se va a usar CALC que nos permite calcular un espacio del 50% menos 10px de cada lado */
+    /*grid-template-columns: calc(25% - 10px) calc(25% - 10px) calc(25% - 10px) calc(25% - 10px);*/
+    /*grid-template-columns: repeat(4, calc(25% - 10px)); /* Esto es lo mismo pero de forma reducida */
+    grid-template-columns: repeat(2, 25% 15%); /* tambien se puede agregar los porcentajes de cada columna, de esta forma. */
+
+
+}
+
+#layout .caja{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    border: 4px solid black;
+    background-color: gray;
+
+}
+
+#layout .red{
+    background-color: red;
+}
+
+#layout .green{
+    background-color: green;
+}
+
+#layout .blue{
+    background-color: blue;
+}
+
+#layout .pink{
+    background-color: pink;
+}
+
+#layout .orangered{
+    background-color: orangered;
+}
+
+#layout .orange{
+    background-color: orange;
+}
