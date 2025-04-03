@@ -5,6 +5,7 @@ body{
 }
 
 .caja{
+    flex-grow: 1;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -38,7 +39,7 @@ body{
     /* Si los elementos son varios y se pasan del ancho de la pantalla; podemos usar lo siguiente:  */
     /*flex-wrap: wrap; /* Lo que hace es que agrupa todos los elementos en el ancho de la pantalla y los que ya no caben, los pasa hacia abajo, como si le diera un enter */
 
-    /*flex-flow: row wrap; /* Esto hace exactamente los mismo, coloca todos los que caben y los que no; los pasa para abajo. 
+    flex-flow: row wrap; /* Esto hace exactamente los mismo, coloca todos los que caben y los que no; los pasa para abajo. 
     */
     
 /* ----------------------------------Justify-content-----------------------------*/
@@ -53,8 +54,52 @@ body{
     
     /*justify-content: space-evenly; /* Lo que hace es que justifica los elementos pero los espacios son un poco mas reducidos y centra los elementos. */
 
-    justify-content: space-between;/* lo que hace es que pega a los bordes los elemtnetos de los costados y justifica los otros elementos */
+    /*justify-content: space-between;/* lo que hace es que pega a los bordes los elemtnetos de los costados y justifica los otros elementos */
 
+    height: 600px;
 
+    /*--------------------------- align-items ---------------------------*/
+
+    align-items: flex-start;/* Lo que hace flex-start es que coloca las cajitas o los elementos al inicio del cuadro layout (en este caso) osea en la parte de arriba, no centrado. */
+    
+    /*align-items: center; /* Reduce de tamaño las cajas y las coloca en el centro de la pagina */
+
+    /*align-items: flex-end; /* Lo que hace es que pone los elementos en la parte de abajo del contenedor */
+
+    border: 3px solid black;
+
+    padding: 5px;
+
+}
+
+.red{
+    /* order: 4; /* ORDER: me coloca los elementos en la posicion que le indiquemos */
+    /*flex-grow: 2; /* FLEX-GROW: lo que hace es aumentar el tamaño del ancho ajustandola con las otras cajas.
+    Tambien toma como prioridad el numero mas grande. */
+    background: var(--rojo);
+}
+
+.green{
+    /*order: 2;*/
+    /*flex-grow: 1;*/
+    /*flex-shrink: 0; /* Esta funcion deja la caja es su tamaño original. */
+    background: green;
+}
+
+.blue{
+    /*order: 1;*/
+    /*flex-grow: 0;*/
+    /*align-self: center; /* Lo que hace esta funcion es que mueve el elemento hacia el centro ( SOLO A ESTE ELEMENTO ) 
+    tambien podemos ponerlo arriba y abajo*/
+    /* align-self: flex-start;/* Lo coloca al inicio */
+    /*align-self: flex-end; /* Lo coloca en la parte de abajo */
+    background: blue;
+}
+
+.orange{
+    /*order: 3;*/
+    /*flex-grow: 0;*/
+    /*flex-basis: 100%; /* Le estamos dando a la caja el 100% del ancho del div */
+    background: orange;
 }
 
