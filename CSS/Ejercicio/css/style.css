@@ -1,0 +1,60 @@
+header{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: beige;
+}
+.layout{
+    display: grid;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.header{
+    border: 2px solid black;
+    color: green;
+}
+
+.sidevar{
+    height: 100%;
+    border: 2px solid black;
+    color: blue;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: linear-gradient(Crimson 30%, steelblue 80%);
+}
+
+.sidevar aside{
+    padding: 10px;
+    border: 2px solid brown;
+    margin: 10px;
+    text-align: justify;
+}
+
+.main{
+    height: 100%;
+    border: 2px solid black;
+    color: blueviolet;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: linear-gradient(Crimson 30%, steelblue 80%);
+}
+
+.footer{
+    border: 2px solid black;
+    color: chocolate;
+}
+
+footer{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: beige;
+}

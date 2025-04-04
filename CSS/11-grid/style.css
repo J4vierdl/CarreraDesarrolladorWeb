@@ -19,7 +19,15 @@ body{
     /*grid-template-columns: calc(50% - 10px) calc(50% - 10px); /* En este caso se va a usar CALC que nos permite calcular un espacio del 50% menos 10px de cada lado */
     /*grid-template-columns: calc(25% - 10px) calc(25% - 10px) calc(25% - 10px) calc(25% - 10px);*/
     /*grid-template-columns: repeat(4, calc(25% - 10px)); /* Esto es lo mismo pero de forma reducida */
-    grid-template-columns: repeat(2, 25% 15%); /* tambien se puede agregar los porcentajes de cada columna, de esta forma. */
+    /*grid-template-columns: repeat(2, 25% 15%); /* tambien se puede agregar los porcentajes de cada columna, de esta forma. */
+
+    /* Otra forma de usar grid es definir las columnas por fracciones, por ejemplo: */
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(2, 1fr);/*
+
+    /* Con GRID tambien podemos trabajar las filas */
+    grid-template-rows: 1fr 1fr 3fr;
+
 
 
 }
@@ -35,10 +43,14 @@ body{
 }
 
 #layout .red{
+    grid-column-start: 1;
+    grid-column-end: 3;
     background-color: red;
 }
 
 #layout .green{
+    grid-row-start: 2;
+    grid-row-end: 4;
     background-color: green;
 }
 
@@ -55,5 +67,8 @@ body{
 }
 
 #layout .orange{
+    /*grid-column-start: 1;
+    grid-column-end: 3;*/
+    grid-column: 2/3;/* Esta es otra forma mas reducida de trabajar grid, estamos diciendo que vamos a cambiar el tamaño de la 2 a las 3 */
     background-color: orange;
 }
