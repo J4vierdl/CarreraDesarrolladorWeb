@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--Para que funcione BOOTSTRAP tenemos que invocarlo y lo hacemos de la siguiente manera: -->
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Aprendiendo BOOTSTRAP con adrianweb.online</h1>
+    <h2>Vamos a utilizar esta herramienta para diseñar</h2>
+
+    <!--CONTAINER de por si ya es una caja centrada-->
+    <div class="container">
+        <!--hay que saber que de por si el maximo de columnas son 12-->
+        <!--definir una fila-->
+        <div class="row">
+            <header class="col-12 bg-primary text-white p-2">
+                <h1>Aprendiendo BOOTSTRAP con adrianweb.online</h1>
+            </header>   
+
+            <nav id="menu" class="col-12 bg-secondary text-white">
+                <!--Le digo que voy a tener una fila con 5 columnas de igual tamaño
+                W-50 un ancho del 50% asi junto los li-->
+
+                <ul class="row w-50">
+                    <li class="col">Inicio</li>
+                    <li class="col">Plantilla 1</li>
+                    <li class="col">Plantilla 2</li>
+                    <li class="col">Plantilla 3</li>
+                    <li class="col">Contacto</li>
+                </ul>
+            </nav>
+
+        </div>
+        
+
+    </div>
+
+
+    <script type="text/javascript" src="jquery/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
