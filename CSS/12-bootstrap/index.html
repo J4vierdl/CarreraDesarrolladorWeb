@@ -40,7 +40,7 @@
         
         <section class="col-12">
             <div class="row">
-                <div class="col-9 border">
+                <section class="col-9 border">
                     <h2>Cajas</h2>
                     <hr>
                     <div class="row">
@@ -67,7 +67,59 @@
                             Item3
                         </div>
                     </div>
+                </section>
+
+
+                <aside class="col-3 border">
+                    <h2>Barra lateral</h2>
+                    <div class="lateral row bg-light">
+                        <div class="late col-4 bg-primary">
+                            Numero1
+                        </div>
+                        <div class="late col-4 bg-secondary">
+                            Numero2
+                        </div>
+                        <div class="late col-4 bg-warning">
+                            Numero3
+                        </div>
+                        <div class="late col-4 bg-primary order-3">
+                            Numero4
+                        </div>
+                        <div class="late col-4 bg-secondary order-1">
+                            Numero5
+                        </div>
+                        <div class="late col-4 bg-warning order-2">
+                            Numero6
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- justify-content-start: se alinea hacia la izquierda 
+                 center al centro, end al final y tambien pueo poner between y around -->
+                <div class="row mt-5 justify-content-center">
+                    <div class="item col-3 bg-primary m-2"><!-- col-3: Que va a tener un ancho de 16px mas o menos -->
+                        ProductoA
+                    </div>
+                    <div class="item col-3 bg-warning m-2">
+                        ProductB
+                    </div>
                 </div>
+                
+                <div class="row mt-3 justify-content-center">
+                    <div class="item col-3 bg-primary">
+                        Elemento1
+                    </div>
+                    <div class="item col-3 bg-warning">
+                        Elemento2
+                    </div>
+                    <div class="item col-3 bg-danger">
+                        Elemento3
+                    </div>
+                    <div class="item col-2 bg-secondary offset-1"> <!--offset-1: lo que hace es darle el espacio de una columna, osa se salta una columna-->
+                        Elemento4
+                    </div>
+                </div>
+
             </div>
         </section>
 
