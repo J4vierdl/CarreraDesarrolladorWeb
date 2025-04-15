@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" style="height: 500px;">
+        <h1>Utilidades Disponibles en bootstrap</h1>
+        <hr> <!--Traza una linea horizontal para separar el texto-->
+
+
+        <!--border le doy un borde y border-primary le da un borde y un color
+        * Rounded rondea bordes, puedo poner rounded-top. ETC.
+        * tambien esta rounded-circle y rounded-0 lo deja por defecto.
+        * <dive class="caja w-25 h-25 border border- primary rounded"> texto 
+        </div>
+        *Tambien se le puede poner un float-start y tambien puedo ponerlo para responsive
+        despues entonces tengo que poner float-md-start.
+        * m-2 es el margen es de 8px
+        * tambien esta el mt-2 que es el margen de top arriba, l izquierda, r derecha, b abajo 
+        -->
+        <div class="m-2 p-3 text-muted bg-primary caja w-25 h-25 border border-primary rounded float-start float-sm-none 
+        float-md-start ">
+            Caja 1
+        </div>
+        <!--puedo poner color de fondo bg-primary
+        * p-3 es el padding
+        * y para poner margin 0 auto para centrar, se pone asi mx-auto -->
+
+        <div class="m-2 p-3 text-white bg-danger caja w-25 h-25 border border-success rounded float-start ">
+            caja 2
+        </div>
+        <!-- El float-sm-none lo que hace es de que el elemento deja de flotar. 
+         float-start hacemos de que el elementento flote al inicio, izquierda-->
+        <div class="m-2 p-3 text-dark badge-warning  w-25 h-25 border border-dark rounded float-start ">
+            caja 3
+        </div>
+
+        <!--con esto hacemos que los elementos dejen de flotar-->
+        <div class="clearfix"></div>
+
+
+        <!--Shadow-lg tambien sm y tambien none le doy una sombra
+        * invisible esconde la caja y visible la muestra-->
+        <div class="visible shadow-lg mx-auto m-2 p-3 text-light bg-success caja w-25 h-25 border border-dark rounded">
+            Esto es una caja no flotada
+        </div>
+
+        <hr>
+        <h2>Este es el fin del contenedor</h2>
+        <hr>
+
+        <!--Display-4 o 3 o 2 o 1 tamaños grandes del texto, f-w-bold es Negrita, f-w-light etc
+        * fst-italic
+        *text-center
+        *text-decoration-none etc... -->
+        <p class="display-4 fw-bold">Esto es un texto</p>
+
+        <code>
+            <!--Lo pone de color de un link visitado-->
+            https://google.com.gt
+        </code>
+    </div>
+</body>
+
+<script type="text/javascript" src="jquery/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+</html>
