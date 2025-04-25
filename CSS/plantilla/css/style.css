@@ -1,0 +1,59 @@
+/*FUENTES*/
+
+@font-face{
+    font-family: "TrebuchetMS"; /*Nombre de la fuente*/
+    src: url(font/TrebuchetMS.ttf);
+    font-weight: normal; /*Grosor de la letra*/
+    font-style:normal; /*Como quiero que sea la letra*/
+}
+
+@font-face{
+    font-family: "BebasNeue";
+    src: url(font/BebasNeue.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ?#ieflix Esto para que ande en internet explorer*/
+/* Todo esto se hace para que sea lo mas compatible posible para los navegadores */
+
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url(font/websymbols-regular-webfont.eot);
+    src: url(font/websymbols-regular-webfont.eot?#ieflix) format('embedded-opentype'),
+    url(font/websymbols-regular-webfont.woff) format('woff'),
+    url(font/websymbols-regular-webfont.ttf) format('truetype'),
+    url(font/websymbols-regular-webfont.svg?#WebSymbolsRegular) format('svg');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GENERALES */
+
+:root{
+    --dark-blue: hsl(233, 26%, 24%);
+    --lime-green: hsl(136, 65%, 51%);
+    --brigth-cyan: hsl(192, 70%, 51%);
+    --grayish-blue: hsl(233, 8%, 62%);
+    --light-grayish-blue: hsl(220, 16%, 96%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* Empezamos dando estilo responsive */
+
+*{
+    margin: 0px;
+}
+
+body{
+    font-family: 'Public Sans';
+}
+
+.container{
+    border: 1px solid red;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
