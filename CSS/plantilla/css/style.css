@@ -49,6 +49,7 @@
 
 body{
     font-family: 'Public Sans';
+    font-size: 16px;
 }
 
 .container{
@@ -56,4 +57,42 @@ body{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.nav{
+    background: var(--white);
+    height: 70px;
+    display: flex; /* Es un complemento de css y es para adaptar con moviles los elementos hijos de NAV, los pone en linea */
+    justify-content: space-between; /* Define como el navegador distibuye el espacio entre y al rededor de los items flex, a lo largo del eje principal de su contenedor Space-Between los elementos aparecen distribuidos uniformemente: al principio, en el centro y al final del conenedor flex. // Space-around: los elementos aparecen distribuidos uniformemente y con un espacio igual entre ellos. */
+
+    align-items: center; /* Centra el contenido */
+}
+
+.nav__img{
+    display: block;
+}
+
+.nav__menu{
+    display: block;
+}
+
+.nav__links{
+    position: fixed; /* la posision pasa a ser el navegador y no tiene en cuenta los ancestros y se que da fijo en su posicion  */
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 3em 1em; /* 1em: Toma el valor del tamaño del contenido, si el contenido tiene un font-size de 50px; tomaria ese valor de padding y 2em; tomaria el valor de 100px de padding. Si tuviera un font-size toma el del padre y va sumando a sus abuelos en caso que los tenga. */
+
+    box-shadow: 0 0 3px rgb(0, 0, 0, .7);
+    z-index: 1000; /* El que tenga el z-index mas alto; se colocara por encima. */
+    border-radius: 8px;
+    display: grid; /* Coloca los enlaces en forma de columna. Ademas es un complemento de CSS y por defecto te da los items uno abajo del otro y cada item ocupa una fila */
+    justify-items: center; /* Centra todos los elementos */
+    gap: 2em; /* En este caso se le va a dar un espacio entre cada item de 32px porque el font-size es de 16px, y html asigna los 16px por defecto si nosotros no lo agregamos */
+    transition: transform .3s; /* Muestra el cuadro con forma de transicion hacia abajo y tarda 0.3 segundos en bajar */
+    transform: translateY(-150%); /* Oculta el cuadro hacia arriba */
+
 }
