@@ -236,9 +236,62 @@ body{
     margin-top: 2em;
     display: grid;
     gap: 2em;
-    
+    }
 
+.articles__article{
+    --img-bg: url('../images/1567497.jpg');
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 0 3px rgb(0, 0, 0, .2);
+    overflow: hidden; /* Oculta el contenido que se salga del cuadro */
+    text-align: left;
 }
 
+/* :nth-of-type(2): esta es una pseudoclase y aqui le estoy indicando que seleccione el articulo (2) osea el segundo y a ese cuadro/elemento/articulo le vamos a aplicar estilo, recordemos que una pseudoclase se le aplica a las clases */
+
+.articles__article:nth-of-type(2){
+    --img-bg: url('../images/aprender-fotografia_dest.jpg');
+}
+
+
+.articles__article:nth-of-type(3){
+    --img-bg: url('../images/R1-300x250.png');
+    
+}
+
+.articles__article:nth-of-type(4){
+    --img-bg: url('../images/24_rest_api_tips.jpg');
+}
+
+.articles__img{
+    width: 100%;
+    height: 250px;
+    background-image: var(--img-bg);
+    background-position: center;
+    background-size: cover;
+}
+
+.articles__text{
+    padding: 1.5em 1em 2.5em;
+}
+
+.articles__aothor{
+    color: var(--grayish-blue);
+    font-size: .8rem;
+}
+
+.articles__title{
+    color: var(--dark-blue);
+    font-weight: 400;
+    margin: .7rem 0;
+}
+
+.articles__paragraph{
+    color: var(--grayish-blue);
+    line-height: 1.5;
+}
 
 
