@@ -77,7 +77,7 @@ body{
 }
 
 .nav__links{
-    position: fixed; /* la posision pasa a ser el navegador y no tiene en cuenta los ancestros y se que da fijo en su posicion  */
+    position: fixed; /* Al usar el scroll del mouse, la ventana no se mueve, sigue en su posicion con respecto a la ventana */
     top: 80px;
     left: 0;
     right: 0;
@@ -219,7 +219,7 @@ body{
     color: var(--grayish-blue);
 }
 
-
+/* ------------ ARTICLES -------------- */
 
 .articles{
     background-color: var(--very-light-gray);
@@ -295,3 +295,66 @@ body{
 }
 
 
+/* ---------------FOOTER---------------- */
+#footer{
+    width: 100%;
+    height: 470px;
+    background-color: rgba(0, 0, 0, 0.09);
+    color: black;
+    overflow: hidden;
+}
+
+#footer .wrap>div{
+    float: left; 
+    width: 320px;
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+    color: black;
+    font-family: 'TrebuchetMS';
+
+}
+
+#footer a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.569);
+    transition: all 300ms;
+}
+
+#footer h5 {
+    display: block;
+    height: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: BebasNeue;
+    font-size: 25px;
+    line-height: 55px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    
+}
+
+#footer ul{
+    text-align: left;
+    margin: 20px;
+    font-size: 20px;
+}
+
+#footer li{
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#footer ul li a{
+    display: block;
+    height: 40px;
+    transition: all 300ms;
+}
+
+#footer ul li:hover a{
+    padding-left: 40px;
+    color: black;
+    width: 100%;
+}
