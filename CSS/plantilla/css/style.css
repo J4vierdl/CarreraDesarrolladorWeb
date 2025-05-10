@@ -323,6 +323,7 @@ body{
 
 #footer h5 {
     display: block;
+    background-color: white;
     height: 50px;
     letter-spacing: 2px;
     text-align: center;
@@ -447,9 +448,8 @@ body{
 
     .hero__background::before{
         left: unset;
-        border: 1px solid red;
         right: 0;
-        height: 550px;
+        height: 500px;
         background-position: 50px -45px;
                 
     }
@@ -460,4 +460,55 @@ body{
         margin: 0 auto;
         text-align: start; /* o left */
     }
+
+    .hero__title{
+        margin: 0;
+    }
+
+    .easybank__container{
+        text-align: start;
+    }
+
+    .easybank__paragraph{
+        width: 550px;
+    }
+
+    .easybank__services{
+        margin: 0;
+        max-width: unset;
+        grid-template-columns: repeat(4, 1fr); /* Cada elemento hijo (en este caso son 4) va a ocupar una columna de 1 fraccion, con esto hacemos que los pequeños articulos se coloquen en fila */
+        gap: 1.5em;
+
+    }
+
+    .easybank__icon{
+        margin-left: unset;
+    }
+
+    .articles__container{
+        text-align: start;
+
+    }
+
+    .articles__content{
+        grid-template-columns: repeat(4, 1fr); /* Cada elemento hijo (en este caso son 4) va a ocupar una columna de 1 fraccion, con esto hacemos que los pequeños articulos se coloquen en fila */
+        gap: 1  em;
+    }
+
+    
+    #footer .wrap{
+         display: flex; 
+         justify-content: center; /* Centra horizontalmente */
+         align-items: center; /* Centra verticalmente */
+         flex-wrap: wrap; /* Permite que se acomoden en varias filas si no caben */
+         height: 100%;  /* Asegúrate de que use toda la altura del footer */
+        }
+    
+
+    #footer .wrap>div{
+        float: none;  /* Elimina el float */
+        margin: 20px;
+    }
+
+
 }
