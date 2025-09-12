@@ -447,7 +447,7 @@ body{
 
     .hero__background::before{
         left: unset;
-        border: 1px solid red;
+        
         right: 0;
         height: 550px;
         background-position: 50px -45px;
