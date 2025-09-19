@@ -4,6 +4,5 @@
 var pais = "Argentina";
 var figura = "Messi";
 var numero = 10;
-var pais
 
-console.log();
+console.log(pais, figura, numero);
